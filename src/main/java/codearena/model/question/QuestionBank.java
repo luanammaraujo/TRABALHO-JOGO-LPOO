@@ -206,6 +206,65 @@ public class QuestionBank {
             "A mitocôndria é chamada de 'usina de energia da célula'.",
             true, Question.Difficulty.DIFICIL, "Biologia"
         ));
+        // ===== COMPLETAR LACUNA - FACIL =====
+        questions.add(new FillBlankQuestion(
+            "A ___ é o planeta mais proximo do Sol.",
+            "mercurio",
+            "Nome de um deus romano",
+            Question.Difficulty.FACIL, "Astronomia"
+        ));
+        questions.add(new FillBlankQuestion(
+            "A ___ é a capital da Franca.",
+            "paris",
+            "Cidade da Torre Eiffel",
+            Question.Difficulty.FACIL, "Geografia"
+        ));
+        questions.add(new FillBlankQuestion(
+            "A ___ é o liquido essencial para a vida.",
+            "agua",
+            "Formula H2O",
+            Question.Difficulty.FACIL, "Ciencias"
+        ));
+
+        // ===== COMPLETAR LACUNA - MEDIO =====
+        questions.add(new FillBlankQuestion(
+            "O ___ foi o cientista que descobriu a gravidade ao ver uma maca cair.",
+            "newton",
+            "Sobrenome de Isaac ___",
+            Question.Difficulty.MEDIO, "Fisica"
+        ));
+        questions.add(new FillBlankQuestion(
+            "A ___ é a celula responsavel pelo transporte de oxigenio no sangue.",
+            "hemacia",
+            "Tambem chamada de globulo vermelho",
+            Question.Difficulty.MEDIO, "Biologia"
+        ));
+        questions.add(new FillBlankQuestion(
+            "O ___ é o maior planeta do Sistema Solar.",
+            "jupiter",
+            "Nome de um deus romano rei dos deuses",
+            Question.Difficulty.MEDIO, "Astronomia"
+        ));
+
+        // ===== COMPLETAR LACUNA - DIFICIL =====
+        questions.add(new FillBlankQuestion(
+            "O ___ é o principio que diz que nao podemos conhecer posicao e velocidade de uma particula simultaneamente.",
+            "incerteza",
+            "Principio de Heisenberg",
+            Question.Difficulty.DIFICIL, "Fisica"
+        ));
+        questions.add(new FillBlankQuestion(
+            "Em Java, o ___ é o modificador que impede uma classe de ser herdada.",
+            "final",
+            "Palavra reservada que tambem impede sobrescrita de metodos",
+            Question.Difficulty.DIFICIL, "Computacao"
+        ));
+        questions.add(new FillBlankQuestion(
+            "O ___ é o algoritmo de ordenacao mais eficiente para listas grandes em media.",
+            "quicksort",
+            "Divide a lista em particoes recursivamente",
+            Question.Difficulty.DIFICIL, "Computacao"
+        ));
     }
 
     /**

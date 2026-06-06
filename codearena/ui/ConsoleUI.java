@@ -3,10 +3,13 @@ package codearena.ui;
 import codearena.model.Player;
 import codearena.model.character.Enemy;
 import codearena.model.question.Question;
+import codearena.model.question.TrueFalseQuestion;
 import codearena.model.question.MultipleChoiceQuestion;
+import codearena.model.question.FillBlankQuestion;
 import codearena.model.ability.AbilityResult;
 import codearena.battle.Round;
 import java.util.Scanner;
+
 
 public class ConsoleUI {
 
@@ -96,13 +99,15 @@ public class ConsoleUI {
     }
 
     public String askAnswer(Question question) {
-        if (question instanceof MultipleChoiceQuestion) {
-            System.out.print("\nSua resposta (A/B/C/D): ");
-        } else {
-            System.out.print("\nSua resposta (V/F): ");
-        }
-        return scanner.nextLine().trim();
+    if (question instanceof MultipleChoiceQuestion) {
+        System.out.print("\nSua resposta (A/B/C/D): ");
+    } else if (question instanceof TrueFalseQuestion) {
+        System.out.print("\nSua resposta (V/F): ");
+    } else {
+        System.out.print("\nSua resposta: ");
     }
+    return scanner.nextLine().trim();
+}
 
     public void showRoundResult(Round.RoundResult result) {
         System.out.println("\n" + result.getOutcome().getFeedback());
