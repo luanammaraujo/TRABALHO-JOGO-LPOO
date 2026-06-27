@@ -11,16 +11,14 @@ public abstract class Character {
     private String name;
     private int maxHp;
     private int currentHp;
-    private int attack;
     private int defense;
     private String description;
     
 
-    public Character(String name, int maxHp, int attack, int defense, String description) {
+    public Character(String name, int maxHp, int defense, String description) {
         this.name = name;
         this.maxHp = maxHp;
         this.currentHp = maxHp;
-        this.attack = attack;
         this.defense = defense;
         this.description = description;
     }
@@ -55,14 +53,13 @@ public abstract class Character {
     public String getName() { return name; }
     public int getMaxHp() { return maxHp; }
     public int getCurrentHp() { return currentHp; }
-    public int getAttack() { return attack; }
     public int getDefense() { return defense; }
     public String getDescription() { return description; }
 
 
     @Override
     public String toString() {
-        return String.format("%s [HP: %d/%d | ATK: %d | DEF: %d]",
-                name, currentHp, maxHp, attack, defense);
+        return String.format("%s [HP: %d/%d | DEF: %d]",
+                name, currentHp, maxHp, defense);
     }
 }

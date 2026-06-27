@@ -12,7 +12,6 @@ public class Rapunzel extends Character {
             "Rapunzel",
             120,
             20,
-            15,
             "A princesa da torre que usa seus longos cabelos magicos como escudo!"
         );
         this.ability = new ShieldAbility();

@@ -38,8 +38,8 @@ public abstract class Question {
     public int getDamageValue() {
         return switch (difficulty) {
             case FACIL -> 20;
-            case MEDIO -> 25;
-            case DIFICIL -> 40;
+            case MEDIO -> 23;
+            case DIFICIL -> 25;
         };
     }
 

@@ -11,9 +11,9 @@ public class Enemy extends Character {
     private String phase;
     private String taunt;   
 
-    public Enemy(String name, int maxHp, int attack, int defense,
+    public Enemy(String name, int maxHp, int defense,
                  String description, String phase, String taunt) {
-        super(name, maxHp, attack, defense, description);
+        super(name, maxHp, defense, description);
         this.phase = phase;
         this.taunt = taunt;
     }
@@ -42,7 +42,6 @@ public class Enemy extends Character {
         return new Enemy(
             "Rainha Má",
             80,
-            12,
             5,
             "A vaidade é minha maior força! Você não conseguirá me derrotar!",
         
@@ -55,7 +54,6 @@ public class Enemy extends Character {
         return new Enemy(
             "Scar",
             80,
-            18,
             8,
             "Lembre-se de quem é o rei! A inteligência é minha arma.",
            
@@ -68,7 +66,6 @@ public class Enemy extends Character {
         return new Enemy(
             "Malévola",
             80,
-            25,
             12,
             "As fadas boas não têm nada sobre mim. Eu sou o mal perfeito!",
             

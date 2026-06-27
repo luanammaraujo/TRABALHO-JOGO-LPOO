@@ -11,7 +11,6 @@ public class Aladdin extends Character {
         super(
             "Alladin",
             100,
-            20,
             10,
             "O jovem de rua esperto que sabe usar a inteligencia para vencer!"
         );
