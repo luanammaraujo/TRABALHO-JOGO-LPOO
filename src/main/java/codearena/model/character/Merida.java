@@ -11,7 +11,7 @@ public class Merida extends Character {
         super(
             "Merida",
             85,
-            30,
+            25,
             5,
             "A corajosa arqueira que dispara com precisao e forca devastadora!"
         );

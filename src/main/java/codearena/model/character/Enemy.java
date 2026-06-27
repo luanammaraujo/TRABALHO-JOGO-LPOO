@@ -54,7 +54,7 @@ public class Enemy extends Character {
     public static Enemy createScar() {
         return new Enemy(
             "Scar",
-            110,
+            80,
             18,
             8,
             "Lembre-se de quem é o rei! A inteligência é minha arma.",
@@ -67,7 +67,7 @@ public class Enemy extends Character {
     public static Enemy createMalévola() {
         return new Enemy(
             "Malévola",
-            150,
+            80,
             25,
             12,
             "As fadas boas não têm nada sobre mim. Eu sou o mal perfeito!",

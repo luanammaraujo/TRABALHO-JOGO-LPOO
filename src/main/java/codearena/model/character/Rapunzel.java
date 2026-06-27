@@ -11,7 +11,7 @@ public class Rapunzel extends Character {
         super(
             "Rapunzel",
             120,
-            15,
+            20,
             15,
             "A princesa da torre que usa seus longos cabelos magicos como escudo!"
         );
