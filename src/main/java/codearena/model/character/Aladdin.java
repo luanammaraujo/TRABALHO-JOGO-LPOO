@@ -25,6 +25,6 @@ public class Aladdin extends Character {
 
     @Override
     public String getAbilityDescription() {
-        return "Tapete Magico: Elimina 2 alternativas erradas";
+        return "Tapete Magico: Da uma dica sobre a pergunta atual";
     }
 }

@@ -4,6 +4,8 @@ import codearena.model.Player;
 import codearena.model.character.Enemy;
 import codearena.model.question.Question;
 import codearena.model.question.MultipleChoiceQuestion;
+import codearena.model.question.TrueFalseQuestion;
+import codearena.model.question.FillBlankQuestion;
 import codearena.model.ability.AbilityResult;
 import codearena.ui.ConsoleUI;
 import java.util.List;
@@ -39,10 +41,15 @@ public class BattleManager {
                 AbilityResult abilityResult = round.useAbility();
                 ui.showAbilityResult(abilityResult);
 
-                // Se for dica, mostra alternativas eliminadas
-                if (abilityResult.getType() == AbilityResult.EffectType.HINT
-                        && question instanceof MultipleChoiceQuestion mcq) {
-                    ui.showEliminatedOptions(mcq.getEliminableOptions(), mcq);
+                // Se for dica, mostra alternativas eliminadas ou opcao errada
+                if (abilityResult.getType() == AbilityResult.EffectType.HINT) {
+                    if (question instanceof MultipleChoiceQuestion mcq) {
+                        ui.showEliminatedOptions(mcq.getEliminableOptions(), mcq);
+                    } else if (question instanceof TrueFalseQuestion tfq) {
+                        ui.showWrongOption(tfq.getWrongOption());
+                    } else if (question instanceof FillBlankQuestion fbq) {
+                        ui.showFillBlankHint(fbq.getHint());
+                    }
                 }
             }
 

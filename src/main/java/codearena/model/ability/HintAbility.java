@@ -9,7 +9,7 @@ public class HintAbility implements Ability {
         return new AbilityResult(
             AbilityResult.EffectType.HINT,
             2,
-            " Alladin usou o Tapete Mágico! Duas alternativas erradas foram eliminadas!"
+            " Alladin usou o Tapete Magico!"
         );
     }
 
@@ -17,7 +17,7 @@ public class HintAbility implements Ability {
     public String getName() { return "Tapete Mágico"; }
 
     @Override
-    public String getDescription() { return "Elimina 2 alternativas incorretas da pergunta atual"; }
+    public String getDescription() { return "Da uma dica para ajudar na pergunta atual"; }
 
 
 }

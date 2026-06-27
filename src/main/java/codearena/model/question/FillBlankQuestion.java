@@ -25,7 +25,6 @@ public class FillBlankQuestion extends Question {
         sb.append("[COMPLETAR LACUNA] ").append(getDifficultyLabel()).append("\n");
         sb.append("----------------------------------------\n");
         sb.append(getStatement()).append("\n\n");
-        sb.append("Dica: ").append(hint).append("\n");
         sb.append("Digite sua resposta: ");
         return sb.toString();
     }

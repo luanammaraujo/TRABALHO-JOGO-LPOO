@@ -31,6 +31,10 @@ public class TrueFalseQuestion extends Question {
         return sb.toString();
     }
 
+    public String getWrongOption() {
+        return isTrue() ? "F" : "V";
+    }
+
     public boolean isTrue() {
         return getCorrectAnswer().equals("V");
     }

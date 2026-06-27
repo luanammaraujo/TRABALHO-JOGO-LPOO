@@ -33,7 +33,7 @@ public class ConsoleUI {
 
     public int askCharacterChoice() {
         System.out.println("\nEscolha seu personagem:");
-        System.out.println("  1) Alladin   - Equilibrado | Habilidade: elimina 2 alternativas erradas");
+        System.out.println("  1) Alladin   - Equilibrado | Habilidade: da uma dica sobre a pergunta");
         System.out.println("  2) Merida    - Alto ataque | Habilidade: dano duplo no proximo acerto");
         System.out.println("  3) Rapunzel  - Alta defesa | Habilidade: bloqueia penalidade do proximo erro");
         System.out.print("\nEscolha (1-3): ");
@@ -84,6 +84,15 @@ public class ConsoleUI {
 
     public void showAbilityResult(AbilityResult result) {
         System.out.println("\n" + result.getMessage());
+    }
+
+    public void showFillBlankHint(String hint) {
+        System.out.println("Dica: " + hint);
+    }
+
+    public void showWrongOption(String wrongOption) {
+        String label = wrongOption.equals("V") ? "Verdadeiro" : "Falso";
+        System.out.println("A opcao incorreta e: " + wrongOption + " (" + label + ")");
     }
 
     public void showEliminatedOptions(String[] eliminated, MultipleChoiceQuestion q) {
